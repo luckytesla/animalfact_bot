@@ -15,6 +15,14 @@ const facts = [
     fact: "The Amazon river is home to four species of river dolphin that are found nowhere else on Earth. ",
     animal: "Dolphin",
   },
+  {
+    fact: "It is common for male penguins to even fight other penguins for the pebble they've set their hearts on. ",
+    animal: "Penguin",
+  },
+  {
+    fact: "A polar bear skin is actually black..!! ",
+    animal: "Polar Bear",
+  },
 ];
 
 module.exports = { facts };
