@@ -2,8 +2,13 @@ const { Telegraf } = require("telegraf");
 const { v4: uuidV4 } = require("uuid");
 require("dotenv").config();
 let factGenerator = require("./factGenerator");
+const PORT = process.env.PORT || 3030;
 
 // code to create an instance of the bot:
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 bot.start((ctx) => {
