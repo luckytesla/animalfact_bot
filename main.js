@@ -7,7 +7,7 @@ let factGenerator = require("./factGenerator");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 bot.start((ctx) => {
-  let message = ` Lucky Kumar Welcomes😃 you to the world of char yaar🦁.\ Please use the /fact command to receive a new fact`;
+  let message = ` Lucky Kumar Welcomes😃 you to the Kingdom of Animals🦁.\n Please use the /fact command to receive a new fact`;
   ctx.reply(message);
 });
 
