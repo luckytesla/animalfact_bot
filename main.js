@@ -21,7 +21,7 @@ bot.start((ctx) => {
 bot.command("fact", async (ctx) => {
   try {
     ctx.reply("generating image , please wait..!!!");
-    let imagePath = './temp/${uuidV4().jpg';
+    let imagePath = './temp/${uuidV4()}.jpg';
     await factGenerator.generateImage(imagePath);
     await ctx.replyWithPhoto({ source: imagePath });
     factGenerator.deleteImage(imagePath);
