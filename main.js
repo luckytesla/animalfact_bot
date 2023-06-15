@@ -1,7 +1,12 @@
+const express = require('express');
+const app = express();
+
 const { Telegraf } = require("telegraf");
 const { v4: uuidV4 } = require("uuid");
 require("dotenv").config();
+
 let factGenerator = require("./factGenerator");
+
 const PORT = process.env.PORT || 3030;
 
 // code to create an instance of the bot:
